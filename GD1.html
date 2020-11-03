@@ -11,12 +11,12 @@
 
 <body>
     <div id="app">
-        <h1>{{ judul }}</h1> <!-- Pemanggilan judul menggunakan '{{}}' -->
-        <p>{{ belajar('Vue JS') }}</p> <!-- memanggil method belajar() -->
+        <h1>{{ judul }}</h1> 
+        <p>{{ belajar('Vue JS') }}</p> 
 
         <p>
             Klik link untuk mengakses
-            <a v-bind:href="link"> <!-- bisa v-bind:href atau :href-->
+            <a v-bind:href="link"> 
                 Dokumentasi Vue JS
             </a>
         </p>
@@ -31,8 +31,8 @@
     new Vue({
         el: '#app',
         data: {
-            judul: "Hello world!", // Deklarasi judul
-            link: "https://vuejs.org/v2/guide/", // link untuk href
+            judul: "Hello world!", 
+            link: "https://vuejs.org/v2/guide/", 
             teks: "",
         },
         methods: {
